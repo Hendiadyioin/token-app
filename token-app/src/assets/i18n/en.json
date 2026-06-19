@@ -1,4 +1,8 @@
 {
+  "TABLE": {},
+  "TABLE_VIEW": {
+    "HEADER": "TABLE Header"
+  },
   "TOKENAPP": {
     "ARIA_LABEL": "TokenApp App"
   }

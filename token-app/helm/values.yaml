@@ -34,4 +34,5 @@ app:
             IMPORT: Import TokenTable items
             EXPORT: Export TokenTable items
             BACK: Navigate back in details of TokenTable item
-            # "ACTION P: Adjust permissions for the entity"
+          TABLE:
+            VIEW: View permission for table

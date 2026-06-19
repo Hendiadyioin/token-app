@@ -1,0 +1,13 @@
+<ocx-portal-page
+  *ngrxLet="viewModel$; let vm"
+  role="main"
+  helpArticleId="PAGE_TOKEN_TABLE_TABLE"
+  [attr.aria-label]="'TABLE.HEADER' | translate"
+>
+  <ocx-page-header header="Token Table" subheader="Created by OneCX App Generator"> </ocx-page-header>
+
+  <ocx-content>
+    <h1>Token Table</h1>
+      <ocx-data-table [columns]="tableColumns" [rows]="tableRows"></ocx-data-table>
+  </ocx-content>
+</ocx-portal-page>

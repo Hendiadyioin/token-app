@@ -10,6 +10,8 @@ import { AngularAcceleratorModule, providePortalDialogService } from '@onecx/ang
 import { DatePickerModule } from 'primeng/datepicker'
 import { TooltipModule } from 'primeng/tooltip'
 import { SharedModule } from '../shared/shared.module'
+import { TableComponent } from './pages/table/table.component'
+import { TableEffects } from './pages/table/table.effects'
 
 import { PermissionService, PortalPageComponent } from '@onecx/angular-utils'
 import { tokenTableFeature } from './token-table.reducers'
@@ -17,7 +19,7 @@ import { routes } from './token-table.routes'
 
 @NgModule({
   providers: [providePortalDialogService(), PermissionService],
-  declarations: [],
+  declarations: [TableComponent],
   imports: [
     CommonModule,
     SharedModule,
@@ -30,7 +32,7 @@ import { routes } from './token-table.routes'
     DatePickerModule,
     TooltipModule,
     StoreModule.forFeature(tokenTableFeature),
-    EffectsModule.forFeature(),
+    EffectsModule.forFeature([TableEffects]),
     TranslateModule
   ]
 })
