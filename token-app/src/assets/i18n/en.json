@@ -1,9 +1,10 @@
 {
-  "TABLE": {},
-  "TABLE_VIEW": {
-    "HEADER": "TABLE Header"
+  "TABLE": {
+    "HEADER": "Auth-Token Table",
+    "DESCRIPTION": "This Table shows all Authentification-Token of the currently logged in user."
   },
-  "TOKENAPP": {
-    "ARIA_LABEL": "TokenApp App"
+  "TABLE_COLUMNS": {
+    "KEY": "Key",
+    "TOKEN": "Token"
   }
 }

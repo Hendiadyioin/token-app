@@ -4,10 +4,13 @@
   helpArticleId="PAGE_TOKEN_TABLE_TABLE"
   [attr.aria-label]="'TABLE.HEADER' | translate"
 >
-  <ocx-page-header header="Token Table" subheader="Created by OneCX App Generator"> </ocx-page-header>
+  <ocx-page-header header="{{'TABLE.HEADER' | translate}}" subheader="{{'TABLE.DESCRIPTION' | translate}}"> </ocx-page-header>
 
   <ocx-content>
-    <h1>Token Table</h1>
-      <ocx-data-table [columns]="tableColumns" [rows]="tableRows"></ocx-data-table>
+      <ocx-data-table [columns]="tableColumns" [rows]="tableRows">
+          <ng-template #stringCell let-rowObject="rowObject" let-column="column">
+            <span id="{{rowObject.id + '-' + column.id}}">{{ rowObject[column.id] }}</span>
+          </ng-template>
+      </ocx-data-table>
   </ocx-content>
 </ocx-portal-page>

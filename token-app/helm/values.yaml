@@ -1,10 +1,10 @@
 app:
   name: ui
   image:
-    repository: onecx-apps/onecx-token-app-ui
+    repository: onecx/onecx-test-oidc-ui
   routing:
     enabled: true
-    path: /mfe/tokenApp/
+    path: /mfe/test-oidc/
   operator:
     microfrontend:
       enabled: true
@@ -25,14 +25,3 @@ app:
       enabled: true
       spec:
         permissions:
-          TOKEN_TABLE:
-            CREATE: Create TokenTable item
-            EDIT: Edit TokenTable item
-            DELETE: Delete TokenTable item
-            SEARCH: Search TokenTable items
-            VIEW: View TokenTable item details
-            IMPORT: Import TokenTable items
-            EXPORT: Export TokenTable items
-            BACK: Navigate back in details of TokenTable item
-          TABLE:
-            VIEW: View permission for table
