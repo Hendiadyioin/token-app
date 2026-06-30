@@ -23,5 +23,3 @@ app:
         description: OneCX TokenApp Frontend
     permission:
       enabled: true
-      spec:
-        permissions:
