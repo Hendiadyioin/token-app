@@ -21,5 +21,3 @@ app:
       spec:
         name: OneCX TokenApp UI
         description: OneCX TokenApp Frontend
-    permission:
-      enabled: true
